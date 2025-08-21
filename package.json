@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 0.0.0.0 --turbopack",
-    "build": "SKIP_ENV_VALIDATION=1 NEXT_LINT=false next build",
-    "build-vercel": "SKIP_ENV_VALIDATION=1 NEXT_LINT=false DISABLE_ESLINT_PLUGIN=true CI=false next build",
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
     "start": "next start",
-    "lint": "bunx tsc --noEmit && next lint",
+    "lint": "next lint",
     "format": "bunx biome format --write",
     "type-check": "bunx tsc --noEmit"
   },

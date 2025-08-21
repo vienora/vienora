@@ -1,15 +1,9 @@
 {
-  "buildCommand": "bun run build",
-  "devCommand": "bun run dev",
-  "installCommand": "bun install",
-  "framework": "nextjs",
-
   "functions": {
     "src/app/api/**/*.ts": {
       "runtime": "nodejs20.x"
     }
   },
-
   "headers": [
     {
       "source": "/api/(.*)",
@@ -28,16 +22,5 @@
         }
       ]
     }
-  ],
-
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
-    }
-  ],
-
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
